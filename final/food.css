@@ -1,0 +1,58 @@
+body {
+  /*@import url("https://fonts.googleapis.com/css2?family=Biryani&display=swap");
+  font-family: "Biryani", sans-serif;*/
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+.main-text {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  background-color: #131246;
+  padding: 2rem;
+  color: white;
+}
+
+.card-group {
+  height: 22rem;
+  margin: 4rem !important;
+  padding-bottom: 30rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 10rem !important;
+  border-radius: 5px;
+  margin-right: 2rem;
+  float: left;
+  margin-bottom: 5rem;
+}
+
+.btn-primary {
+  background-color: #861a2e !important;
+}
+
+.link {
+  text-align: center;
+}
+
+.card-body {
+  background-color: #131246;
+  color: white;
+  text-align: center;
+}
+
+.card-img-top {
+  object-fit: cover;
+}
+
+img {
+  height: 22rem;
+}
+
+/*https://speckyboy.com/open-source-carousel-sliders-css/
+https://www.codingnepalweb.com/owl-carousel-cards-slider-jquery/
+https://freefrontend.com/css-social-media-icons/
+https://css-tricks.com/how-to-re-create-a-nifty-netflix-animation-in-css/
+https://mdbootstrap.com/snippets/jquery/alexpiffero-it/696600
+*/
