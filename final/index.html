@@ -1,6 +1,8 @@
 <!--Anna Bosaller
 Ruramaimunashe Mutefura
 Alexis Wallner
+
+To run: https://motours-project-1.ruemunae.repl.co/final/index.html
 -->
 
 <!DOCTYPE html>
@@ -8,25 +10,37 @@ Alexis Wallner
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <title>MoTours</title>
   </head>
   <body>
     <div class="nav-bar">
       <ul>
+        <li id="home"><a href="index.html"><img src="images/logo.png"/></a></li>
         <li id="home"><a href="index.html">Home</a></li>
-        <li id="other"><a href="#">About Us</a></li>
+        <li id="other"><a href="about.html">About Us</a></li>
         <li id="other"><a href="food.html">Food</a></li>
-        <li id="other"><a href="#">Sites</a></li>
-        <li id="other"><a href="#">Shopping</a></li>
-        <li id="other"><a href="#">Activities</a></li>
+        <li id="other"><a href="site.html">Sites</a></li>
+        <li id="other"><a href="shopping.html">Shopping</a></li>
+        <li id="other"><a href="activities.html">Activities</a></li>
       </ul>
     </div>
 
     <div class="top-img">
       <img src="images/index/stl.jpg" />
     </div>
+
+       <!--SCROLL BUTTON-->
+
+    
     <!--SITES SECTION-->
     <div class="left">
       <div id="left-text">
@@ -37,14 +51,22 @@ Alexis Wallner
           <span
             >With over 100 counties in Missouri, there are a lot of places to
             visit and explore. The state hosts countless sites and places one
-            can enjoy and visit. Whether you enjoy nature or love site-seeing,
+            can enjoy and visit. Missouri has a variety of shops which have a lot of different commodities. Whether you enjoy nature or love site-seeing,
             the state of Misouri has got you covered. Click below to check out
             some places.</span
           >
+           <br/>
+          <div class="link">
+            <a
+              href="site.html"
+              class="btn btn-danger"
+              target="_blank"
+              >Places to Visit</a
+            >
+          </div>
+
         </div>
-        <div class="btn-1">
-          <a class="btn" href="#" target="_blank">Places to visit</a>
-        </div>
+       
       </div>
 
       <div id="left-image">
@@ -65,12 +87,18 @@ Alexis Wallner
           <span
             >Feeling a little hungry? Or a lot hungry? Missouri is host to a
             number of restaurants and food outlets with a variety of food
-            options to explore. Click below to checkout some places to eat.
+            options to explore. Whether you love local cuisine or exotic food, Missouri has you covered. 
+            Click below to checkout some places to eat.
           </span>
         </div>
-        <div class="btn-1" style="margin-top: 8rem;">
-          <a class="btn" href="#" target="_blank"> Places to eat </a>
-        </div>
+                    <div class="link">
+            <a
+              href="food.html"
+              class="btn btn-danger btn btn-danger-danger"
+              target="_blank"
+              >Places to Visit</a
+            >
+          </div>
       </div>
     </div>
 
@@ -88,9 +116,14 @@ Alexis Wallner
             check out come places</span
           >
         </div>
-        <div class="btn-1">
-          <a class="btn" href="#" target="_blank">Places to shop</a>
-        </div>
+                 <div class="link">
+            <a
+              href="#"
+              class="btn btn-danger"
+              target="_blank"
+              >Places to Visit</a
+            >
+          </div>
       </div>
 
       <div id="left-image">
@@ -107,7 +140,7 @@ Alexis Wallner
         <div id="large-text">
           Feeling adventorous?
         </div>
-        <div id="small-text">
+        <div id="small-text" style="height: 20rem;">
           <span
             >The state if Missouri offers a lot of activities to do. From hiking
             to museums, there are a lot of activities to do. Whether you are a
@@ -115,17 +148,88 @@ Alexis Wallner
             below to checkout some places to visit .</span
           >
         </div>
-        <div class="btn-1" style="margin-top: 3rem; margin-bottom: 100rem;">
-          <a class="btn" href="#" target="_blank">Places to eat</a>
+                 <div class="link">
+            <a
+              href="activities.html"
+              class="btn btn-danger"
+              target="_blank"
+              >Places to Visit</a
+            >
+          </div>
         </div>
-      </div>
     </div>
 
-    <!--CONTACT DETAILS-->
-    <div class="footer">
-      <a href="#">About Us</a>
-      | <a href="#">Help center</a>
+    <div class="sponsors">
+
     </div>
+
+    <!--SPONSORS BAR-->
+<div class="slider">
+<div class="slide-track">
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+</div>
+<div class="slide">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+</div>
+</div>
+</div>
+    <!-- END OF SPONSORS BAR-->
+    <!--CONTACT DETAILS-->
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Help</a></li>
+                <li class="list-inline-item"><a href="#">About Us</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">MoTours © 2022</p>
+        </footer>
+    </div>
+
   </body>
 </html>
-<!--Goal simplicity experience high quality-->
+<!--Slider code gotten from: https://webdesignerwall.com/wdw-snippet/infinite-autoplay-carousel-->
+
+<!-- Ask this man the policy on using other videos in html
+https://www.youtube.com/results?search_query=visitmo-->

@@ -1,9 +1,7 @@
-body {
-  /*@import url("https://fonts.googleapis.com/css2?family=Biryani&display=swap");
-  font-family: "Biryani", sans-serif;*/
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: white;
-}
+/*The styling in this page is inheritated by all sub pages*/
+/*NOTE: Main css is inheritated by card elements*/
+/*Bootstrap styling is used, remember to use !important to override bootstrap styling*/
+
 .main-text {
   margin-bottom: 5rem;
   margin-top: 5rem;
@@ -12,6 +10,7 @@ body {
   color: white;
 }
 
+/*CARD STYLING*/
 .card-group {
   height: 22rem;
   margin: 4rem !important;
@@ -26,14 +25,7 @@ body {
   margin-right: 2rem;
   float: left;
   margin-bottom: 5rem;
-}
-
-.btn-primary {
-  background-color: #861a2e !important;
-}
-
-.link {
-  text-align: center;
+ 
 }
 
 .card-body {
@@ -43,16 +35,40 @@ body {
 }
 
 .card-img-top {
-  object-fit: cover;
+  object-fit: cover;  
 }
 
 img {
   height: 22rem;
 }
 
-/*https://speckyboy.com/open-source-carousel-sliders-css/
-https://www.codingnepalweb.com/owl-carousel-cards-slider-jquery/
-https://freefrontend.com/css-social-media-icons/
-https://css-tricks.com/how-to-re-create-a-nifty-netflix-animation-in-css/
-https://mdbootstrap.com/snippets/jquery/alexpiffero-it/696600
-*/
+.link{
+  text-align: center;
+}
+
+/*BUTTON STYLING*/
+.btn-primary{
+  background-color: #861a2e !important;
+  text-align: center !important;
+  transition: .3s !important;
+  box-shadow:#861a2e !important;
+}
+
+.btn-primary:hover{
+  animation: pulse 1s infinite .3s !important;
+  transition: .3s !important;
+  background-color: red !important;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(.9);
+  }
+    100% {
+    transform: scale(1);
+  }
+}
+
+
