@@ -10,6 +10,7 @@ body {
 	position: sticky;
 	top: 0;
   z-index: 999;
+  font-weight: normal;
 }
 
 .nav-bar ul {
@@ -19,6 +20,40 @@ body {
   text-decoration: none;
   color: white;
 }
+
+/*Navbar hover effects*/
+/*Obtained from https://css-tricks.com/css-link-hover-effects/
+Nice hover effects from */
+.nav-bar a {
+  background-image: linear-gradient(to right, #861a2e, #861a2e 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.nav-bar a:before {
+  content: '';
+  background: #861a2e;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.nav-bar a:hover {
+  background-position: 0;
+}
+.nav-bar a:hover::before {
+  width: 100%;
+}
+
+/**/
 
 #home {
   float: left;
@@ -41,12 +76,32 @@ img {
 }
 
 .top-img img {
+  position: relative;
   height: 50rem;
   width: 100%;
   object-fit: cover;
 }
 
+.bottom-left {
+  z-index:100;
+  position:absolute;    
+  color:white;
+  font-size:35px;
+  font-weight:bold;
+  left:10px;
+  top:45rem;
+  width: 40%;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 2);
+
+}
 /*end of top image */
+
+/*Logo */
+#logo{
+float: left;
+height: 3.5rem;
+}
+/*end of Logo */
 
 /*Start of styling*/
 /*Each block inherits styling depending on side*/
