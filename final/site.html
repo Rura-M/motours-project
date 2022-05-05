@@ -549,15 +549,38 @@
       </div>
     </div>
 
+        <!--This block of code creates the scroll-up button, W3schools helped create this-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrow.png"/></button>
+    <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
     <!--CONTACT DETAILS-->
 
     <div class="footer-basic" style="margin-top:0rem;">
         <footer>
             <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-<div class="about">
-  <ul class="list-inline">
-         <h5><a id="#abt">About Us</a></h5>
-  </ul>
+<div class="about" id="abt">
+  
+         <h5 id="#abt">About Us</h5>
+  
           Missouri Tourism is the official Missouri travel guide. Plan your next trip to Missouri by using Missouri Tourism as your guide to Find Food, Find Places to Shop, Find Places to Go, and Find Things to Do. Missouri has a lot of undiscovered gems that only Missouri Tourism can suggest to you. Plan your entire trip around Missouri with Missouri Tourism for a guaranteed perfect trip. 
 </div>
             <ul class="list-inline">

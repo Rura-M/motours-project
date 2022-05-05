@@ -21,7 +21,7 @@
       <a id="logo" href="index.html"><img src="images/logo.png"/></a>
       <ul>    
         <li id="home"><a href="index.html">MoTours</a></li>
-        <li id="other"><a href="about.html">About Us</a></li>
+        <li id="other"><a href="#abt">About Us</a></li>
         <li id="other"><a href="food.html">Food</a></li>
         <li id="other"><a href="site.html">Sites</a></li>
         <li id="other"><a href="shopping.html">Shopping</a></li>
@@ -30,7 +30,7 @@
     </div>
     <!--Top Image-->
     <div class="top-img">
-      <img src="images/food/main.jpg" />
+      <img src="images/food/p&b.jpg" />
       <div class="bottom-left">Get ready to tickle your taste buds with all the culinary options in MO!
       </div>
     </div>
@@ -42,7 +42,7 @@
     <!--Cards-->
     <div class="card-group">
       <div class="card">
-        <img src="images/food/pizza1.jpg" class="card-img-top" alt="..." />
+        <img src="https://cdn.modpizza.com/wp-content/uploads/2016/11/Dominic.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h4>
             MOD Pizza
@@ -59,14 +59,14 @@
       </div>
 
       <div class="card">
-        <img src="images/food/salad.jpg" class="card-img-top" alt="..." />
+        <img src="https://www.lasmargaritascolumbia.com/img/home/fajitas-min.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h4>
             Las Margaritas
           </h4>
           <div class="link">
             <a
-              href="https://www.lasmargaritascolumbia.com/pdf/LasMargaritasDinnerMenu-compressed.pdf"
+              href="https://www.lasmargaritascolumbia.com/"
               class="btn btn-primary"
               target="_blank"
               >Menu</a
@@ -76,7 +76,7 @@
       </div>
 
       <div class="card">
-        <img src="images/food/chinese1.jpg" class="card-img-top" alt="..." />
+        <img src="https://olo-images-live.imgix.net/dd/dd91fc53f7124f86ae7833eede4a802f.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=b08d9fd5cc269c84f2b223298752819d" class="card-img-top" alt="..." />
         <div class="card-body">
           <h4>
             Panda's Express
@@ -93,7 +93,7 @@
       </div>
 
       <div class="card">
-        <img src="images/food/p&b.jpg" class="card-img-top" alt="..." />
+        <img src="https://www.dineatpark.com/assets/images/home/mothers-day-reservations.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h4>
             Park Restaurant and Bar
@@ -546,11 +546,34 @@
       </div>
     </div>
 
+        <!--This block of code creates the scroll-up button, W3schools helped create this-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrow.png"/></button>
+    <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
     <!--CONTACT DETAILS-->
     <div class="footer-basic" style="margin-top:0rem;">
         <footer>
             <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-<div class="about">
+<div class="about" id="abt">
   <ul class="list-inline">
          <h5><a id="#abt">About Us</a></h5>
   </ul>

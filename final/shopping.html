@@ -20,7 +20,7 @@
       <a id="logo" href="index.html"><img src="images/logo.png"/></a>
       <ul>    
         <li id="home"><a href="index.html">MoTours</a></li>
-        <li id="other"><a href="about.html">About Us</a></li>
+        <li id="other"><a href="#abt">About Us</a></li>
         <li id="other"><a href="food.html">Food</a></li>
         <li id="other"><a href="site.html">Sites</a></li>
         <li id="other"><a href="shopping.html">Shopping</a></li>
@@ -523,7 +523,7 @@
       </div>
 
             <div class="card">
-        <img src="https://scontent.fmci2-1.fna.fbcdn.net/v/t39.30808-6/271751553_10160247683654341_7627744156233386711_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=kuYiVBZTCMsAX9sU0Rd&_nc_ht=scontent.fmci2-1.fna&oh=00_AT-yHKta25VHp-FZvWsm-JW1GmBYa1ccRfDduJmW2WwPkw&oe=627078E9" class="card-img-top" alt="cafe" />
+        <img src="https://www.countrycrossroads.com/nimg/1.jpg" />
         <div class="card-body">
           <h4>
             Country Crossroads
@@ -540,12 +540,35 @@
       </div>
     </div>
 
+        <!--This block of code creates the scroll-up button, W3schools helped create this-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrow.png"/></button>
+    <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
     <!--CONTACT DETAILS-->
 
     <div class="footer-basic" style="margin-top:0rem;">
         <footer>
             <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-<div class="about">
+<div class="about" id="abt">
   <ul class="list-inline">
          <h5><a id="#abt">About Us</a></h5>
   </ul>
